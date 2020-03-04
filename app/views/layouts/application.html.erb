@@ -7,9 +7,16 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://unpkg.com/packery@2.1/dist/packery.pkgd.js"></script>
   </head>
 
   <body>
+    <%= link_to "Know more about us", about_path %>
+    <%= link_to  "Meet our team", contact_path %>
+
+    </div>
     <%= yield %>
+    <p>Now is <%= Time.now %><p>
+     <p>A very simple footer</p>
   </body>
 </html>
